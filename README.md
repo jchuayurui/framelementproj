@@ -1,5 +1,6 @@
-#Frame_Element_in_2D_Truss
-Credits to: Prof Lim, Prof Ong, A.J.M. Ferreira, Euler, Newton, Hooke, Bernoulli
+# Frame_Element_in_2D_Truss
+
+*Credits to: Prof Lim, Prof Ong, A.J.M. Ferreira, Euler, Newton, Hooke, Bernoulli*
 
 Created by:
 Ricky Theodore
