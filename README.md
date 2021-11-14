@@ -16,9 +16,11 @@ As part of ME4291 Finite Element Analysis Project
   Let us take a sample structure with 2 material types
   
   ![Sample Structure](/images/nodeno.png)
+  
   The node file should contain x and y coordinates separated like this
   
   ![Sample Node file](/images/nodalcoordinates.JPG)
+  
   The element file should contain the node number at each end of the element.
   
   ![Sample Element file](/images/elemcon.JPG)
