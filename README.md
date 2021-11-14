@@ -31,11 +31,35 @@ As part of ME4291 Finite Element Analysis Project
   
   If we load these sample files as `nodes = load('nodalcoordinates.txt'); elems = load('elemconnect.txt');` and script the example file as `[nodes, elems] = elementsplit(nodes,elems,1)`, we will obtain the following:
   
+  New Node data
   ![New Nodes](/images/newnodes.JPG)
+  
+  New Element data
   ![New Elements](/images/newelems.JPG)
+  
+  Visual representation
   ![Visual](/images/newvisual.JPG)
   
+  This is pretty neat for identifying node numbers where you will either set boundary conditions or increase load. For example, you now know that the complete center is at node 9, and no matter how many iterations you do, it will still be node 9. The split elements also retain the material type in the third column.
   
 3. Create Boundary Condition file
-4. Configure Loading Conditions
-5. Run
+
+  Understanding the Boundary Condition file is important as well. Let us take a look at an example of a Cantilever.
+  
+  ![Cantilever](/images/cantileverbc.JPG)
+  
+  The first column indicates the node number, and the second column indicates which degree of freedom. In a Frame element, 1 indicates degree of freedom in the x-axis, 2 indicates degree of freedom in y-axis, and 3 indicates degree of freedom in rotation. In a cantilever boundary condition, all 3 are fixed to zero, and the main script recognizes this and eliminates it from the global matrix so that it can solve the global matrix using its algorithms.
+  
+  This is an example of a pinned support at node 1 and a roller support at node 4
+  
+  ![PinRoller](/images/pin1roller4.JPG)
+  
+  As we know, pinned supports are free to rotate and roller supports are free to slide. Thus the only degree of freedom we set in this example file is 1 and 2 for node 1, and 2 for node 4.
+  
+  Lastly, let us take a look at a pinned support on both ends.
+  
+  ![Pinned](/images/pin14.JPG)
+  
+  This is what we can expect to see in a truss and we have used it for our project as well.
+5. Configure Loading Conditions
+6. Run
