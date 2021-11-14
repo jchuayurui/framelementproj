@@ -44,7 +44,7 @@ As part of ME4291 Finite Element Analysis Project
   
 3. Create Boundary Condition file
 
-  Understanding the Boundary Condition file is important as well. Let us take a look at an example of a Cantilever.
+  Understanding the Boundary Condition file is important as well. In our file `Truss2D.m`, it is loaded as a data with the text file `'Input_bc_disp_truss.txt`. Let us take a look at an example of a Cantilever.
   
   ![Cantilever](/images/cantileverbc.JPG)
   
