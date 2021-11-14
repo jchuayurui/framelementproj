@@ -15,13 +15,13 @@ As part of ME4291 Finite Element Analysis Project
 
   Let us take a sample structure with 2 material types
   
-  ![Sample Structure](/images/nodenumber.png)
+  ![Sample Structure](/images/nodenumber1.png)
   The node file should contain x and y coordinates separated like this
   
   ![Sample Node file](/images/nodalcoordinates.JPG)
   The element file should contain the node number at each end of the element.
   
-  ![Sample Element file](/images/elemconnect.JPG)
+  ![Sample Element file](/images/elemconnect1.JPG)
   
   
   In MATLAB, index starts from one, so refer to the node file as you are connecting. The third column in the element file is for identification of material types. This can also be configured in `get_material_prop.m`
