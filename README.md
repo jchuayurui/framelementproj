@@ -61,5 +61,56 @@ As part of ME4291 Finite Element Analysis Project
   ![Pinned](/images/pin14.JPG)
   
   This is what we can expect to see in a truss and we have used it for our project as well.
+  
+  
 5. Configure Loading Conditions
-6. Run
+
+  The loading conditions are a bit more tricky to configure. The script file to edit is `Input_2D_Force.m`. In our files included, we have included self-weight for this example. 
+  
+  A sample implementation is shown below.
+  
+  ![Self-weight](/images/weight.JPG)
+  
+  If we want to implement a vertical load downwards at node 9 for example, this is how you would configure the file(see lines 15-17 and 53-55 of `Input_2D_Force.m`.)
+  ![Vertical load](/images/vert.JPG)
+  
+  ![Assemble Fy](/images/fyassemble.JPG)
+  
+  Similarly, for a horizontal load at node 5 in the x-direction, you have to configure as such.
+  
+  ![Horizontal load](/images/hor.JPG)
+  
+  ![Assemble Fx](/images/fxassemble.JPG)
+  
+7. Run
+  
+  Run the main file known as `Truss2D.m`. Do remember to change the names of the nodal coordinate and element connectivity files accordingly, and select how many iterations you would split the element.
+  
+  ![Load main](/images/loadmain.JPG)
+  
+  To better visualize the deformation, a variable called `deformation_scale` is used. Shown below are the effects of it.
+  
+  Vertical load at node 9 with pinned supports
+  
+  Deformation Scale 10
+  
+  ![DS10](/images/ds10.JPG)
+  
+  Deformation Scale 100
+  
+  ![DS100](/images/ds100.JPG)
+  
+  Deformation Scale 1000
+  
+  ![DS1000](/images/ds1000.JPG)
+  To configure the colours of the undeformed plots for different materials, see lines 119-124. For changing the colours of deformed plots, see line 31 of `ferguson_plot.m`.
+  
+  
+  
+  
+We hope you have as much fun as we did!
+
+
+  
+  
+  
