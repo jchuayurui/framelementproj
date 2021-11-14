@@ -1,4 +1,4 @@
-#Frame Element in 2D Truss
+#Frame_Element_in_2D_Truss
 Credits to: Prof Lim, Prof Ong, A.J.M. Ferreira, Euler, Newton, Hooke, Bernoulli
 
 Created by:
