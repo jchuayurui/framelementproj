@@ -34,12 +34,15 @@ As part of ME4291 Finite Element Analysis Project
   If we load these sample files as `nodes = load('nodalcoordinates.txt'); elems = load('elemconnect.txt');` and script the example file as `[nodes, elems] = elementsplit(nodes,elems,1)`, we will obtain the following:
   
   New Node data
+  
   ![New Nodes](/images/newnodes.JPG)
   
   New Element data
+  
   ![New Elements](/images/newelems.JPG)
   
   Visual representation
+  
   ![Visual](/images/newvisual.JPG)
   
   This is pretty neat for identifying node numbers where you will either set boundary conditions or increase load. For example, you now know that the complete center is at node 9, and no matter how many iterations you do, it will still be node 9. The split elements also retain the material type in the third column.
@@ -74,6 +77,7 @@ As part of ME4291 Finite Element Analysis Project
   ![Self-weight](/images/weight.JPG)
   
   If we want to implement a vertical load downwards at node 9 for example, this is how you would configure the file(see lines 15-17 and 53-55 of `Input_2D_Force.m`.)
+  
   ![Vertical load](/images/vert.JPG)
   
   ![Assemble Fy](/images/fyassemble.JPG)
