@@ -3,6 +3,7 @@
 *Credits to: Prof Lim, Prof Ong, A.J.M. Ferreira, Euler, Newton, Hooke, Bernoulli, Cauchy, and everyone who has furthered engineering through the pursuit of Analytical, Numerical, and Computational Methods*
 
 Created by:
+
 Ricky Theodore
 
 Clement Arthur Fischer
