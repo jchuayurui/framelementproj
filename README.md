@@ -103,6 +103,8 @@ As part of ME4291 Finite Element Analysis Project
   Deformation Scale 1000
   
   ![DS1000](/images/ds1000.JPG)
+  
+  
   To configure the colours of the undeformed plots for different materials, see lines 119-124. For changing the colours of deformed plots, see line 31 of `ferguson_plot.m`.
   
   
