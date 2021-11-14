@@ -56,5 +56,6 @@ end
 
 for i=1:num_of_nodes
     global_f(3*i - 1) = force_Y(i);
+    %global_f(3*i -2) = force_X(i);
     global_f(3*i) = moment(i);
 end
